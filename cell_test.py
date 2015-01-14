@@ -24,6 +24,7 @@ except RuntimeError as e:
 # open device
 try:
     dev.openPhidget()
+    sleep(1)
 except PhidgetException as e:
     print("Phidget Exception %i: %s" % (e.code, e.detail))
     exit(1)
@@ -33,9 +34,8 @@ except PhidgetException as e:
 print("Waiting for attachment... "),
 dev.waitForAttach(10000)
 print("Detected " + dev.getDeviceName() + " ;)")
-print("Gain: " + str(dev.getGain(0)))
 
-#dev.isAttached()
+dev.isAttached()
 dev.setEnabled(0,1)
 dev.getEnabled(0)
 
@@ -48,6 +48,22 @@ dev.getEnabled(2)
 dev.setEnabled(3,1)
 dev.getEnabled(3)
 
+dev.setDataRate(1000)
+
+dev.setGain(0,2)
+sleep(0.5)
+dev.setGain(1,3)
+sleep(0.5)
+dev.setGain(2,4)
+sleep(0.5)
+dev.setGain(3,5)
+sleep(0.5)
+
+
+print("Gain Up DX: " + str(dev.getGain(0)))
+print("Gain Low DX: " + str(dev.getGain(1)))
+print("Gain Up SX: " + str(dev.getGain(2)))
+print("Gain Low SX: " + str(dev.getGain(3)))
 
 
 #Information Display Function
@@ -60,6 +76,7 @@ def displayDeviceInfo():
     print("Number of bridge inputs: %i" % (dev.getInputCount()))
     print("Data Rate Max: %d" % (dev.getDataRateMax()))
     print("Data Rate Min: %d" % (dev.getDataRateMin()))
+    print("Current Data Rate: %d" % (dev.getDataRate()))
     print("Input Value Max: %d" % (dev.getBridgeMax(0)))
     print("Input Value Min: %d" % (dev.getBridgeMin(0)))
 
@@ -73,6 +90,7 @@ displayDeviceInfo()
 while(1):
     try:
         print("%d:\t(Up DX: %f, Low DX: %f - Up SX: %f, Low SX: %f)" % (count, dev.getBridgeValue(0), dev.getBridgeValue(1), dev.getBridgeValue(2), dev.getBridgeValue(3)))
+        #print(dev.getBridgeValue(0))
         count = count + 1
         sleep(1)
     except KeyboardInterrupt:
