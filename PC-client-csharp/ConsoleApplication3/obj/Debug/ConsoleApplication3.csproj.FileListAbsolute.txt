@@ -1,0 +1,42 @@
+c:\users\giovanni toscano\documents\visual studio 2013\Projects\ConsoleApplication3\ConsoleApplication3\bin\Debug\ConsoleApplication3.exe.config
+c:\users\giovanni toscano\documents\visual studio 2013\Projects\ConsoleApplication3\ConsoleApplication3\bin\Debug\ConsoleApplication3.exe
+c:\users\giovanni toscano\documents\visual studio 2013\Projects\ConsoleApplication3\ConsoleApplication3\bin\Debug\ConsoleApplication3.pdb
+c:\users\giovanni toscano\documents\visual studio 2013\Projects\ConsoleApplication3\ConsoleApplication3\obj\Debug\ConsoleApplication3.csprojResolveAssemblyReference.cache
+c:\users\giovanni toscano\documents\visual studio 2013\Projects\ConsoleApplication3\ConsoleApplication3\obj\Debug\ConsoleApplication3.exe
+c:\users\giovanni toscano\documents\visual studio 2013\Projects\ConsoleApplication3\ConsoleApplication3\obj\Debug\ConsoleApplication3.pdb
+C:\Users\Giovanni\Desktop\SocketClient C#\ConsoleApplication3\ConsoleApplication3\bin\Debug\ConsoleApplication3.exe.config
+C:\Users\Giovanni\Desktop\SocketClient C#\ConsoleApplication3\ConsoleApplication3\bin\Debug\ConsoleApplication3.exe
+C:\Users\Giovanni\Desktop\SocketClient C#\ConsoleApplication3\ConsoleApplication3\bin\Debug\ConsoleApplication3.pdb
+C:\Users\Giovanni\Desktop\SocketClient C#\ConsoleApplication3\ConsoleApplication3\obj\Debug\ConsoleApplication3.exe
+C:\Users\Giovanni\Desktop\SocketClient C#\ConsoleApplication3\ConsoleApplication3\obj\Debug\ConsoleApplication3.pdb
+C:\Users\Giovanni\Desktop\SocketClient C#\ConsoleApplication3\ConsoleApplication3\obj\Debug\ConsoleApplication3.csprojResolveAssemblyReference.cache
+C:\Users\Giovanni\Desktop\SocketClient C#\ConsoleApplication3\ConsoleApplication3\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Giovanni\Desktop\SocketClient C#\ConsoleApplication3\ConsoleApplication3\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\Giovanni\Desktop\SocketClient C#\ConsoleApplication3\ConsoleApplication3\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Giovanni\Desktop\Balance\Balance\Socket\SocketClient C#\ConsoleApplication3 - JSON\SocketClient C#\ConsoleApplication3\ConsoleApplication3\bin\Debug\ConsoleApplication3.exe.config
+C:\Users\Giovanni\Desktop\Balance\Balance\Socket\SocketClient C#\ConsoleApplication3 - JSON\SocketClient C#\ConsoleApplication3\ConsoleApplication3\bin\Debug\ConsoleApplication3.exe
+C:\Users\Giovanni\Desktop\Balance\Balance\Socket\SocketClient C#\ConsoleApplication3 - JSON\SocketClient C#\ConsoleApplication3\ConsoleApplication3\bin\Debug\ConsoleApplication3.pdb
+C:\Users\Giovanni\Desktop\Balance\Balance\Socket\SocketClient C#\ConsoleApplication3 - JSON\SocketClient C#\ConsoleApplication3\ConsoleApplication3\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Giovanni\Desktop\Balance\Balance\Socket\SocketClient C#\ConsoleApplication3 - JSON\SocketClient C#\ConsoleApplication3\ConsoleApplication3\obj\Debug\ConsoleApplication3.exe
+C:\Users\Giovanni\Desktop\Balance\Balance\Socket\SocketClient C#\ConsoleApplication3 - JSON\SocketClient C#\ConsoleApplication3\ConsoleApplication3\obj\Debug\ConsoleApplication3.pdb
+C:\Users\giovanni toscano\Desktop\Balance 2015-01-12\Balance\Balance\Socket\SocketClient C#\ConsoleApplication3 - JSON\SocketClient C#\ConsoleApplication3\ConsoleApplication3\bin\Debug\ConsoleApplication3.exe.config
+C:\Users\giovanni toscano\Desktop\Balance 2015-01-12\Balance\Balance\Socket\SocketClient C#\ConsoleApplication3 - JSON\SocketClient C#\ConsoleApplication3\ConsoleApplication3\obj\Debug\ConsoleApplication3.exe
+C:\Users\giovanni toscano\Desktop\Balance 2015-01-12\Balance\Balance\Socket\SocketClient C#\ConsoleApplication3 - JSON\SocketClient C#\ConsoleApplication3\ConsoleApplication3\obj\Debug\ConsoleApplication3.pdb
+C:\Users\giovanni toscano\Desktop\Balance 2015-01-12\Balance\Balance\Socket\SocketClient C#\ConsoleApplication3 - JSON\SocketClient C#\ConsoleApplication3\ConsoleApplication3\obj\Debug\ConsoleApplication3.csprojResolveAssemblyReference.cache
+C:\Users\giovanni toscano\Desktop\Balance 2015-01-12\Balance\Balance\Socket\SocketClient C#\ConsoleApplication3 - JSON\SocketClient C#\ConsoleApplication3\ConsoleApplication3\bin\Debug\ConsoleApplication3.exe
+C:\Users\giovanni toscano\Desktop\Balance 2015-01-12\Balance\Balance\Socket\SocketClient C#\ConsoleApplication3 - JSON\SocketClient C#\ConsoleApplication3\ConsoleApplication3\bin\Debug\ConsoleApplication3.pdb
+C:\Users\giovanni toscano\Desktop\Balance 2015-01-12\Balance\Balance\Socket\SocketClient C#\ConsoleApplication3 - JSON\SocketClient C#\ConsoleApplication3\ConsoleApplication3\bin\Debug\Newtonsoft.Json.dll
+C:\Users\giovanni toscano\Desktop\ProtomBalance\Client\ConsoleApplication3 - JSON\SocketClient C#\ConsoleApplication3\ConsoleApplication3\bin\Debug\ConsoleApplication3.exe.config
+C:\Users\giovanni toscano\Desktop\ProtomBalance\Client\ConsoleApplication3 - JSON\SocketClient C#\ConsoleApplication3\ConsoleApplication3\bin\Debug\ConsoleApplication3.exe
+C:\Users\giovanni toscano\Desktop\ProtomBalance\Client\ConsoleApplication3 - JSON\SocketClient C#\ConsoleApplication3\ConsoleApplication3\bin\Debug\ConsoleApplication3.pdb
+C:\Users\giovanni toscano\Desktop\ProtomBalance\Client\ConsoleApplication3 - JSON\SocketClient C#\ConsoleApplication3\ConsoleApplication3\bin\Debug\Newtonsoft.Json.dll
+C:\Users\giovanni toscano\Desktop\ProtomBalance\Client\ConsoleApplication3 - JSON\SocketClient C#\ConsoleApplication3\ConsoleApplication3\obj\Debug\ConsoleApplication3.exe
+C:\Users\giovanni toscano\Desktop\ProtomBalance\Client\ConsoleApplication3 - JSON\SocketClient C#\ConsoleApplication3\ConsoleApplication3\obj\Debug\ConsoleApplication3.pdb
+C:\Users\Daniele Costarella\Documents\GitHub\phidgetbridge\PC-client-csharp\ConsoleApplication3\bin\Debug\ConsoleApplication3.exe.config
+C:\Users\Daniele Costarella\Documents\GitHub\phidgetbridge\PC-client-csharp\ConsoleApplication3\obj\Debug\ConsoleApplication3.exe
+C:\Users\Daniele Costarella\Documents\GitHub\phidgetbridge\PC-client-csharp\ConsoleApplication3\obj\Debug\ConsoleApplication3.pdb
+C:\Users\Daniele Costarella\Documents\GitHub\phidgetbridge\PC-client-csharp\ConsoleApplication3\obj\Debug\ConsoleApplication3.csprojResolveAssemblyReference.cache
+C:\Users\Daniele Costarella\Documents\GitHub\phidgetbridge\PC-client-csharp\ConsoleApplication3\bin\Debug\ConsoleApplication3.exe
+C:\Users\Daniele Costarella\Documents\GitHub\phidgetbridge\PC-client-csharp\ConsoleApplication3\bin\Debug\ConsoleApplication3.pdb
+C:\Users\Daniele Costarella\Documents\GitHub\phidgetbridge\PC-client-csharp\ConsoleApplication3\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\Daniele Costarella\Documents\GitHub\phidgetbridge\PC-client-csharp\ConsoleApplication3\bin\Debug\Newtonsoft.Json.xml
