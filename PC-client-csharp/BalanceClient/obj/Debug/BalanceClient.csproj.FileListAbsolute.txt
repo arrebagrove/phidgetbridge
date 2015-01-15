@@ -1,1 +1,9 @@
 C:\Users\giovanni toscano\Documents\GitHub\phidgetbridge\PC-client-csharp\ConsoleApplication3\bin\Debug\BalanceClient.exe.config
+C:\Users\Daniele Costarella\Documents\GitHub\phidgetbridge\PC-client-csharp\BalanceClient\bin\Debug\BalanceClient.exe.config
+C:\Users\Daniele Costarella\Documents\GitHub\phidgetbridge\PC-client-csharp\BalanceClient\obj\Debug\BalanceClient.csprojResolveAssemblyReference.cache
+C:\Users\Daniele Costarella\Documents\GitHub\phidgetbridge\PC-client-csharp\BalanceClient\bin\Debug\BalanceClient.exe
+C:\Users\Daniele Costarella\Documents\GitHub\phidgetbridge\PC-client-csharp\BalanceClient\bin\Debug\BalanceClient.pdb
+C:\Users\Daniele Costarella\Documents\GitHub\phidgetbridge\PC-client-csharp\BalanceClient\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\Daniele Costarella\Documents\GitHub\phidgetbridge\PC-client-csharp\BalanceClient\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Daniele Costarella\Documents\GitHub\phidgetbridge\PC-client-csharp\BalanceClient\obj\Debug\BalanceClient.exe
+C:\Users\Daniele Costarella\Documents\GitHub\phidgetbridge\PC-client-csharp\BalanceClient\obj\Debug\BalanceClient.pdb

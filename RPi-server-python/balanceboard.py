@@ -9,6 +9,7 @@ __version__ = '0.0.1'
 import random # test
 import socket
 import threading
+import json
 from time import sleep
 from Phidgets.Devices.Bridge import *
 
@@ -26,6 +27,9 @@ serversocket.listen(5)
 
 count = 0
 array = [0.]*4
+
+props = {"delay": 1.0, "others" : ""}
+
 
 print("Micro Load Cell Test")
 
@@ -98,6 +102,9 @@ def displayDeviceInfo():
     print("Input Value Max: %d" % (dev.getBridgeMax(0)))
     print("Input Value Min: %d" % (dev.getBridgeMin(0)))
 
+def setProperties(jsonObj):
+    props['delay'] =(json.loads(jsonObj)["delay"])
+
 def clientthread(connection):
    while True:
       try:
@@ -107,17 +114,19 @@ def clientthread(connection):
             if(cmd == "READ"):
                for i in range(0,4):
                   array[i] = str(random.uniform(0.0,1.0))
-               stringa = "{\"values\":["+array[0]+","+array[1]+","+array[2]+","+array[3]+"],\"props\":{\"rate\":0.5}}"
+               stringa = "{\"values\":["+array[0]+","+array[1]+","+array[2]+","+array[3]+"],\"props\":{\"delay\":"+str(props['delay'])+"}}"
                #Send è asincrona(default) ma con receive bloccate è sincrona
                connection.send(stringa.encode())
                #ACK
                ack = connection.recv(2).decode()
                print(stringa)
-               #time.sleep(0.1)
+               sleep(props['delay'])
             if(cmd == "SET"):
                connection.send("OK".encode())
                jsonObj = connection.recv(256).decode()
-               print(jsonObj)
+               setProperties(jsonObj)
+               #print(jsonObj)
+               #delay =(json.loads(jsonObj)["rate"])
       except socket.error as exc:
          print("Client disconnesso : ",exc)
          connection.shutdown(1)

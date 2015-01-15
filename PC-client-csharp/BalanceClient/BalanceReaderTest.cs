@@ -20,14 +20,14 @@ namespace it.protomgroup.wallt {
             Console.WriteLine(bObj.Values[BalanceObj.UpperRight]);
             Console.WriteLine(bObj.Values[BalanceObj.LowerLeft]);
             Console.WriteLine(bObj.Values[BalanceObj.LowerRight]);
-            Console.WriteLine(bObj.Props.Rate);
+            Console.WriteLine(bObj.Props.Delay);
             i++;
             //Conta fino a 10 e poi chiudi il reader
 
-            if (i == 10)
+            if (i == 5)
                reader.Close();
-            else
-               System.Threading.Thread.Sleep(500);
+            //else
+            //   System.Threading.Thread.Sleep(1000);
          }
       }
    }

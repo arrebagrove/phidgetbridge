@@ -8,11 +8,11 @@ using Newtonsoft.Json;
 namespace it.protomgroup.wallt {
    public class Properties {
 
-      [JsonProperty("rate")]
-      public float Rate { get; set; }
+      [JsonProperty("delay")]
+      public float Delay { get; set; }
 
-      public Properties(float rate) { 
-           Rate = rate;
+      public Properties(float delay) {
+          Delay = delay;
       }
 
    }
