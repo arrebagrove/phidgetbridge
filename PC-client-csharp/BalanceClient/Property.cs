@@ -6,10 +6,14 @@ using Newtonsoft.Json;
 
 
 namespace it.protomgroup.wallt {
-   public class Property {
+   public class Properties {
 
       [JsonProperty("rate")]
       public float Rate { get; set; }
+
+      public Properties(float rate) { 
+           Rate = rate;
+      }
 
    }
 }

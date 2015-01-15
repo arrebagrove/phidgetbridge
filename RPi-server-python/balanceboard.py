@@ -8,7 +8,7 @@ __version__ = '0.0.1'
 
 import random # test
 import socket
-import thread
+import threading
 from time import sleep
 from Phidgets.Devices.Bridge import *
 
@@ -16,21 +16,21 @@ from Phidgets.Devices.Bridge import *
 # set port (default: 11111)
 port = 11111
 #ipaddr = socket.gethostbyname(socket.gethostname())
-ipaddr = "127.0.0.1"
+ipaddr = "0.0.0.0"
 
 # socket init
 # type: TCP/IP
 serversocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 serversocket.bind((ipaddr, port))
-serversocket.listen(1)
+serversocket.listen(5)
 
 count = 0
 array = [0.]*4
 
 print("Micro Load Cell Test")
 
-print("Apertura socket di rete con tipo connessione TCP")
-print("Indirizzo server: " + ipaddr)
+print("Apertura socket TCP")
+print("Indirizzo Bind: " + ipaddr)
 print("In ascolto sulla porta ", port)
 
 """ Init and open device """
@@ -82,9 +82,6 @@ dev = 0;
 #
 #
 #
-connection, address = serversocket.accept()
-print("Connessione con client ", address, " stabilita.")
-
 
 # Information Display Function
 def displayDeviceInfo():
@@ -101,46 +98,46 @@ def displayDeviceInfo():
     print("Input Value Max: %d" % (dev.getBridgeMax(0)))
     print("Input Value Min: %d" % (dev.getBridgeMin(0)))
 
+def clientthread(connection):
+   while True:
+      try:
+         cmd = connection.recv(5).decode()
+         if len(cmd) > 0:
+            print("Comando ",cmd, " ricevuto.")
+            if(cmd == "READ"):
+               for i in range(0,4):
+                  array[i] = str(random.uniform(0.0,1.0))
+               stringa = "{\"values\":["+array[0]+","+array[1]+","+array[2]+","+array[3]+"],\"props\":{\"rate\":0.5}}"
+               #Send è asincrona(default) ma con receive bloccate è sincrona
+               connection.send(stringa.encode())
+               #ACK
+               ack = connection.recv(2).decode()
+               print(stringa)
+               #time.sleep(0.1)
+            if(cmd == "SET"):
+               connection.send("OK".encode())
+               jsonObj = connection.recv(256).decode()
+               print(jsonObj)
+      except socket.error as exc:
+         print("Client disconnesso : ",exc)
+         connection.shutdown(1)
+         connection.close()
 
 #displayDeviceInfo()
 
 # Get a data point from Analog Port 0
 #print("Value: " + str(dev.getBridgeValue(0)))
 
-
-def waitCommand():
-    while 1:
-        received = connection.recv(1024).decode()
-        if not received: pass
-        else: print(received)
-        sleep(0.5)
-
-
 if __name__ == '__main__':
-    thread.start_new_thread(waitCommand,())
-    while (1):
-        try:
-            for i in range(0,4):
-                #array[i] = dev.getBridgeValue(i)
-                array[i] = str(random.uniform(0.0,1.0))
-            jsonstring = "{\"cmd\":\"GET\",\"values\":["+array[0]+","+array[1]+","+array[2]+","+array[3]+"],\"props\":{\"rate\":0.5}}"
-
-            #Send e' asincrona(default) ma con receive bloccate e' sincrona
-            connection.send(jsonstring.encode())
-            #Receive bloccante
-            ack = connection.recv(2).decode()
-            print(jsonstring)
-            count = count + 1
-            print("Numero pacchetto: "+str(count))
-            sleep(1)
-
-        except KeyboardInterrupt or socket.error as exc:
-            serversocket.shutdown(1)
-            serversocket.close()
-            print("Client disconnesso : ",exc)
-            #In attesa di una nuova richiesta
-            connection, address = serversocket.accept()
-            print("Connessione con nuovo client ", address, " stabilita.")
+    while True:
+        conn, addr = serversocket.accept()
+        print("Connesso con client " + addr[0] + ":" + str(addr[1]))
+        threading.Thread(
+            target=clientthread,
+            args=((conn,)),
+        ).start() 
+serversocket.shutdown(1)
+serversocket.close()
 
 
 """ Close and Delete """

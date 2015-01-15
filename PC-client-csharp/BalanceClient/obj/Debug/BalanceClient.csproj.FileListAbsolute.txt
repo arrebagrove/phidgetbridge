@@ -1,0 +1,1 @@
+C:\Users\giovanni toscano\Documents\GitHub\phidgetbridge\PC-client-csharp\ConsoleApplication3\bin\Debug\BalanceClient.exe.config

@@ -17,13 +17,15 @@ namespace it.protomgroup.wallt
       public const int LowerLeft  = 2;
       public const int LowerRight = 3;
 
+      /*
       [JsonProperty("cmd")]
       public string Cmd { get; set; }
+       */
 
       [JsonProperty("values")]
       public float[] Values { get; set; }
 
       [JsonProperty("props")]
-      public Property Props { get; set; }
+      public Properties Props { get; set; }
    }
 }

@@ -40,3 +40,6 @@ C:\Users\Daniele Costarella\Documents\GitHub\phidgetbridge\PC-client-csharp\Cons
 C:\Users\Daniele Costarella\Documents\GitHub\phidgetbridge\PC-client-csharp\ConsoleApplication3\bin\Debug\ConsoleApplication3.pdb
 C:\Users\Daniele Costarella\Documents\GitHub\phidgetbridge\PC-client-csharp\ConsoleApplication3\bin\Debug\Newtonsoft.Json.pdb
 C:\Users\Daniele Costarella\Documents\GitHub\phidgetbridge\PC-client-csharp\ConsoleApplication3\bin\Debug\Newtonsoft.Json.xml
+C:\Users\giovanni toscano\Documents\GitHub\phidgetbridge\PC-client-csharp\ConsoleApplication3\bin\Debug\ConsoleApplication3.exe.config
+C:\Users\giovanni toscano\Documents\GitHub\phidgetbridge\PC-client-csharp\ConsoleApplication3\obj\Debug\ConsoleApplication3.exe
+C:\Users\giovanni toscano\Documents\GitHub\phidgetbridge\PC-client-csharp\ConsoleApplication3\obj\Debug\ConsoleApplication3.pdb
